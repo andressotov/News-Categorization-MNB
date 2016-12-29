@@ -4,11 +4,12 @@ The objective of this project is to show how to use Multinomial Naive Bayes (MNB
 
 ## Code Example
 
-The code imports news from the file "uci-news-aggregator.csv" via Pandas (Python Data Analysis Library). Program 
+The code imports news from the file 'uci-news-aggregator.csv' via Pandas (Python Data Analysis Library). Program 
 News categories are encoded as numbers. News text is tokenized, counted and vectorized via scikit learn libraries. 
 Data is divided into two sets: one for training the MNB algorithm and the other to test it.
 The classifier is trained and then tested. Results are shown. 
 The program is programmed in Python 3 and stored in categorization.py 
+You can find detailed information about the project and the code into the file 'News Categorization MNB.ipynb'
 
 ## Motivation
 
