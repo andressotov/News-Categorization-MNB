@@ -1,15 +1,15 @@
 ## Synopsis
 
-Can we predict the category (business, entertainment, etc.) of a news article given only its headline? The objective of this project is to show how to use Multinomial Naive Bayes (MNB) model to classify news according to some predefined classes. 
+The objective of this project is to show how to use Multinomial Naive Bayes (MNB) model to classify news according to some predefined classes. In order to avoid overfitting, it is necessary to test the model's ability to generalize by evaluating its performance on a set of data not used for training, which is assumed to approximate the typical unseen data that a model will encounter. In cross-validation, data subsets are held out for use as validating sets; the model is fit to the remaining data (i.e. training set) and the validation set is used for prediction. Averaging the quality of the predictions across the validation sets yields an overall measure of prediction accuracy.
 
 ## Code Example
 
 The code imports news from a CSV file called 'uci-news-aggregator' via Pandas (Python Data Analysis Library). 
 News text is tokenized, counted and vectorized via scikit learn libraries. 
-Data is divided into two sets: one for training the MNB algorithm and the other to test it.
-The classifier is trained and then tested. Results are shown. 
-The program is programmed in Python 3 and stored in News_Categorization_MNB.py 
-You can find detailed information about the project and the code into the file 'News Categorization MNB.ipynb'
+Data is divided into two sets: one for training the MNB algorithm and the other to test it. The classifier is trained and then tested. This step is repeated 10 times and results are averaged. Random K-Fold and Stratified K-Fold cross-validation method with and without shuffling were used.
+Accuracy and F1-score results are shown. 
+The program is programmed in Python 3 and stored in Using random cross-validation for news categorization.py 
+You can find detailed information about the project and the code into the file 'Using random cross-validation for news categorization.ipynb'
 
 ## Motivation
 
